@@ -3,6 +3,7 @@ import { ExpenseTrackerContext } from './context/context';
 
 import { incomeCategories, expenseCategories, resetCategories } from './constants/categories';
 
+//logic for the transaction(totals, data and categories )
 const useTransactions = (title) => {
   resetCategories();
   const { transactions } = useContext(ExpenseTrackerContext);
