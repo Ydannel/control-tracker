@@ -5,6 +5,7 @@ import { Delete, MoneyOff } from '@material-ui/icons';
 import { ExpenseTrackerContext } from '../../../context/context';
 import useStyles from './styles';
 
+//The different actions(you history) that the user has spent are listed
 const List = () => {
   const classes = useStyles();
   const { transactions, deleteTransaction } = useContext(ExpenseTrackerContext);
