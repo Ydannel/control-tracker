@@ -14,7 +14,7 @@ const CustomizedSnackbar = ({ open, setOpen }) => {
 
     setOpen(false);
   };
-
+  //when create a new transaction show this 
   return (
     <div className={classes.root}>
       <Snackbar 
