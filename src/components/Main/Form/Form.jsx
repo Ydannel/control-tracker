@@ -38,8 +38,9 @@ const NewTransactionForm = () => {
     addTransaction({ ...formData, amount: Number(formData.amount), id: uuidv4() });
     setFormData(initialState);
   };
-
+ //for speech
   useEffect(() => {
+    //add the text  in the formulary when we talk
     if (segment) {
       if (segment.intent.intent === 'add_expense') {
         setFormData({ ...formData, type: 'Expense' });
@@ -72,7 +73,7 @@ const NewTransactionForm = () => {
             break;
         }
       });
-
+          //when all the fields are full, then create a new transaction
       if (segment.isFinal && formData.amount && formData.category && formData.type && formData.date) {
         createTransaction();
       }
@@ -86,7 +87,8 @@ const NewTransactionForm = () => {
       <Snackbar open={open} setOpen={setOpen} />
       <Grid item xs={12}>
         <Typography align="center" variant="subtitle2" gutterBottom>
-        {segment ? (
+        { //show the subtitles when we talk
+        segment ? (
         <div className="segment">
           {segment.words.map((w) => w.value).join(" ")}
         </div>
