@@ -5,9 +5,11 @@ import { SpeechProvider } from '@speechly/react-client';
 import { Provider } from './context/context';
 import App from './App';
 import './index.css';
+import {proyectId} from './config'
+
 
 ReactDOM.render(
-  <SpeechProvider appId ={process.env.REACT_APP_ID} language="en-US">
+  <SpeechProvider appId ={ proyectId} language="en-US">
     <Provider>
       <App />
     </Provider>
