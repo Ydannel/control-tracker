@@ -4,6 +4,6 @@
 }
 
 body {
-    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(https://pixabay.com/get/g2a5302f42692efbe9dfbe6271065d59837c8c75ca7969c2587e6eef536d9166d71900cee4c9e269092cded394439d9ee_1280.jpg);
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(https://cdn.pixabay.com/photo/2018/05/18/16/04/payment-3411414_960_720.jpg);
     background-size: cover;
 }
